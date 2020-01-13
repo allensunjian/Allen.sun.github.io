@@ -21,15 +21,15 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="#####(rj-1) js开发规范：######Rj-1-1 命名：    命名空间： 小驼峰    构造函数： 大驼峰    常量： 全大写并单下划线做连词符    私有变量： 单下划线+小驼峰    私有变量（常量）：单下划线+全大写并单下划线做连词符    命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名    例如：具有行为的：动词+名词，如：getResume,">
+    <meta name="description" content="(rj-1) js开发规范：Rj-1-1 命名：命名空间： 小驼峰 构造函数： 大驼峰 常量： 全大写并单下划线做连词符 私有变量： 单下划线+小驼峰 私有变量（常量）：单下划线+全大写并单下划线做连词符 命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名 例如：具有行为的：动词+名词，如：getResume,goHome 具有某种状态的： (名词或者动词)+Status，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端规范">
 <meta property="og:url" content="http://yoursite.com/2020/01/13/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83%E8%8D%89%E6%A1%88/index.html">
 <meta property="og:site_name" content="Allen的晓Home">
-<meta property="og:description" content="#####(rj-1) js开发规范：######Rj-1-1 命名：    命名空间： 小驼峰    构造函数： 大驼峰    常量： 全大写并单下划线做连词符    私有变量： 单下划线+小驼峰    私有变量（常量）：单下划线+全大写并单下划线做连词符    命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名    例如：具有行为的：动词+名词，如：getResume,">
+<meta property="og:description" content="(rj-1) js开发规范：Rj-1-1 命名：命名空间： 小驼峰 构造函数： 大驼峰 常量： 全大写并单下划线做连词符 私有变量： 单下划线+小驼峰 私有变量（常量）：单下划线+全大写并单下划线做连词符 命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名 例如：具有行为的：动词+名词，如：getResume,goHome 具有某种状态的： (名词或者动词)+Status，">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-13T08:02:41.000Z">
-<meta property="article:modified_time" content="2020-01-13T08:37:50.800Z">
+<meta property="article:modified_time" content="2020-01-13T09:45:35.688Z">
 <meta property="article:author" content="Allen sun">
 <meta name="twitter:card" content="summary">
     
@@ -166,6 +166,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#rj-1-js开发规范："><span class="post-toc-number">1.</span> <span class="post-toc-text">(rj-1) js开发规范：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rj-1-1-命名："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Rj-1-1 命名：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rj-1-2-注释："><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Rj-1-2 注释：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rj-1-2-1-头部注释"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Rj-1-2-1 头部注释</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rj-1-2-2-行内注释"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Rj-1-2-2 行内注释</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rj-1-2-方法的行数做限制："><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Rj-1-2 方法的行数做限制：</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#rc-1-css编写规范："><span class="post-toc-number">2.</span> <span class="post-toc-text">(rc-1) css编写规范：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rc-1-1-命名格式："><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Rc-1-1 命名格式：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rc-1-2-见名知意："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Rc-1-2 见名知意：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rc-1-3-选择器的使用："><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Rc-1-3 选择器的使用：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rc-1-4-嵌套层级："><span class="post-toc-number">2.4.</span> <span class="post-toc-text">Rc-1-4 嵌套层级：</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#rh-1-html编写规范："><span class="post-toc-number">3.</span> <span class="post-toc-text">(rh-1) html编写规范：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-1-class，id命名格式：-参见-Rc-1-1-命名格式。"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Rh-1-1 class，id命名格式： 参见 Rc-1-1 命名格式。</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-2-标签属性命名："><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Rh-1-2 标签属性命名：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-3-内联样式："><span class="post-toc-number">3.3.</span> <span class="post-toc-text">Rh-1-3 内联样式：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-4-style标签的使用"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">Rh-1-4 style标签的使用</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-5-important关键字"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">Rh-1-5 important关键字</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rh-1-6-script标签的使用"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">Rh-1-6 script标签的使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#rp-1-静态文件规范："><span class="post-toc-number">4.</span> <span class="post-toc-text">(rp-1) 静态文件规范：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rp-1-1-项目命名"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Rp-1-1 项目命名:</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rp-1-2-目录命名包括css-js-html-json"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">Rp-1-2 目录命名包括css&#x2F;js&#x2F;html&#x2F;json:</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rp-1-3-图片命名："><span class="post-toc-number">4.3.</span> <span class="post-toc-text">Rp-1-3 图片命名：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rp-1-4-代码仓库规范："><span class="post-toc-number">4.4.</span> <span class="post-toc-text">Rp-1-4 代码仓库规范：</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#Rp-1-5-静态文件创建规则："><span class="post-toc-number">4.5.</span> <span class="post-toc-text">Rp-1-5 静态文件创建规则：</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
 
 <article id="post-前端规范草案"
   class="post-article article-type-post fade" itemprop="blogPost">
@@ -186,12 +193,19 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>#####(rj-1) js开发规范：<br>######Rj-1-1 命名：<br>    命名空间： 小驼峰<br>    构造函数： 大驼峰<br>    常量： 全大写并单下划线做连词符<br>    私有变量： 单下划线+小驼峰<br>    私有变量（常量）：单下划线+全大写并单下划线做连词符<br>    命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名<br>    例如：具有行为的：动词+名词，如：getResume,goHome<br>    具有某种状态的： (名词或者动词)+Status， 如 ResumeStatus,     LoginStatus<br>    布尔值类型的： is+（名词或者动词）， 如 isLogin, isSubmit<br>######Rj-1-2 注释：</p>
-<blockquote>
+            <h5 id="rj-1-js开发规范："><a href="#rj-1-js开发规范：" class="headerlink" title="(rj-1) js开发规范："></a>(rj-1) js开发规范：</h5><h6 id="Rj-1-1-命名："><a href="#Rj-1-1-命名：" class="headerlink" title="Rj-1-1 命名："></a>Rj-1-1 命名：</h6><pre><code>命名空间： 小驼峰
+构造函数： 大驼峰
+常量： 全大写并单下划线做连词符
+私有变量： 单下划线+小驼峰
+私有变量（常量）：单下划线+全大写并单下划线做连词符
+命名必须符合语义化，严禁出现 名称与实际不符，或者没有语义的    命名
+例如：具有行为的：动词+名词，如：getResume,goHome
+具有某种状态的： (名词或者动词)+Status， 如 ResumeStatus,     LoginStatus
+布尔值类型的： is+（名词或者动词）， 如 isLogin, isSubmit</code></pre><h6 id="Rj-1-2-注释："><a href="#Rj-1-2-注释：" class="headerlink" title="Rj-1-2 注释："></a>Rj-1-2 注释：</h6><blockquote>
 <p>头部使用多行注释，注解、标注、解释采用单行注释</p>
 </blockquote>
 <ul>
-<li>######Rj-1-2-1 头部注释</li>
+<li><h6 id="Rj-1-2-1-头部注释"><a href="#Rj-1-2-1-头部注释" class="headerlink" title="Rj-1-2-1 头部注释"></a>Rj-1-2-1 头部注释</h6></li>
 </ul>
 <pre><code>使用必填项关键字 Create （创建人）
 使用必填项关键字 Module （模块名称）
@@ -218,8 +232,7 @@
           -    Description: 发布职位编辑和新增共同页面
           -    Module: PublishJob.cshtml
           -&gt;</code></pre><ul>
-<li><p>######Rj-1-2-2 行内注释</p>
-<ul>
+<li><h6 id="Rj-1-2-2-行内注释"><a href="#Rj-1-2-2-行内注释" class="headerlink" title="Rj-1-2-2 行内注释"></a>Rj-1-2-2 行内注释</h6><ul>
 <li>函数的注释：<blockquote>
 <p>函数的注释采用关键字： TODO、DONE、NOTE 关键字进行不同情况的区分注释</p>
 </blockquote>
@@ -241,51 +254,47 @@ js:
         // NOTE: getResume方法大于100行，获取数据之后需要计算大量的数据，并且需要修改数据结构，请注意</code></pre><p><font color=red>注意： TODO —&gt; DONE 的状态需要手动修改，请注意</font></p>
 <pre><code>变量的注释：
  var sResumeName = null; 可以不用注释，见名知意
- var const SRN = null; // 简历名称 -----必须注释非见名之意</code></pre><p>######Rj-1-2 方法的行数做限制：<br>    强制所有的方法不得超过100行，如果超过，需要对TL进行报备，并对代码的复杂性和注意事项用NOTE关键字进行说明。示例参见：Rj-1-2-2 行内注释 - js - NOTE 的定义</p>
-<p>#####(rc-1) css编写规范：</p>
-<blockquote>
+ var const SRN = null; // 简历名称 -----必须注释非见名之意</code></pre><h6 id="Rj-1-2-方法的行数做限制："><a href="#Rj-1-2-方法的行数做限制：" class="headerlink" title="Rj-1-2 方法的行数做限制："></a>Rj-1-2 方法的行数做限制：</h6><pre><code>强制所有的方法不得超过100行，如果超过，需要对TL进行报备，并对代码的复杂性和注意事项用NOTE关键字进行说明。示例参见：Rj-1-2-2 行内注释 - js - NOTE 的定义</code></pre><h5 id="rc-1-css编写规范："><a href="#rc-1-css编写规范：" class="headerlink" title="(rc-1) css编写规范："></a>(rc-1) css编写规范：</h5><blockquote>
 <p>鉴于大家对block__element_modifier 命名法则接受程度不同，建议但是不强制要求使用。</p>
 </blockquote>
 <ul>
-<li>######Rc-1-1 命名格式：<pre><code>只能使用 英文字符 + 特殊字符：（&apos;-&apos;||&apos;--&apos;||&apos;_&apos;||&apos;__&apos;） + 英文字符 + 阿拉伯数字 的组合方式，且必须以英文字符开头只能是小写，不能以特殊字符结尾，特殊字符除了规则意外的不能连续出现多次 。可以是单英文字符但是如果是多个单词的词组中间必须加上 规定的特殊符号之一。 如： resume, resume-body, resume_body, padding-18, padding--18等任意的组合方式。</code></pre></li>
-<li>######Rc-1-2 见名知意：<pre><code>严禁出现无意义的命名，词不达意的命名。英文缩写是被允许的，但是必须进行单行注释 规则参见：变量的注释</code></pre></li>
-<li>######Rc-1-3 选择器的使用： <pre><code>禁止使用ID选择器，标签选择器，一切优先使用class选择器。</code></pre></li>
-<li>######Rc-1-4 嵌套层级： <pre><code>选择器的查找层级放开了3层，严禁大于三层。</code></pre></li>
+<li><h6 id="Rc-1-1-命名格式："><a href="#Rc-1-1-命名格式：" class="headerlink" title="Rc-1-1 命名格式："></a>Rc-1-1 命名格式：</h6><pre><code>只能使用 英文字符 + 特殊字符：（&apos;-&apos;||&apos;--&apos;||&apos;_&apos;||&apos;__&apos;） + 英文字符 + 阿拉伯数字 的组合方式，且必须以英文字符开头只能是小写，不能以特殊字符结尾，特殊字符除了规则意外的不能连续出现多次 。可以是单英文字符但是如果是多个单词的词组中间必须加上 规定的特殊符号之一。 如： resume, resume-body, resume_body, padding-18, padding--18等任意的组合方式。</code></pre></li>
+<li><h6 id="Rc-1-2-见名知意："><a href="#Rc-1-2-见名知意：" class="headerlink" title="Rc-1-2 见名知意："></a>Rc-1-2 见名知意：</h6><pre><code>严禁出现无意义的命名，词不达意的命名。英文缩写是被允许的，但是必须进行单行注释 规则参见：变量的注释</code></pre></li>
+<li><h6 id="Rc-1-3-选择器的使用："><a href="#Rc-1-3-选择器的使用：" class="headerlink" title="Rc-1-3 选择器的使用："></a>Rc-1-3 选择器的使用：</h6><pre><code>禁止使用ID选择器，标签选择器，一切优先使用class选择器。</code></pre></li>
+<li><h6 id="Rc-1-4-嵌套层级："><a href="#Rc-1-4-嵌套层级：" class="headerlink" title="Rc-1-4 嵌套层级："></a>Rc-1-4 嵌套层级：</h6><pre><code>选择器的查找层级放开了3层，严禁大于三层。</code></pre></li>
 </ul>
 <p><font color=red>注意以上规则原则上是不能违反的，但是遇到特殊情况可以向TL进行报备之后，在代码中进行NOTE注释原因并填写注意事项。注释规则参见：Rj-1-2-2 行内注释</font></p>
-<p>#####(rh-1) html编写规范：</p>
-<ul>
-<li>######Rh-1-1 class，id命名格式： 参见 Rc-1-1 命名格式。</li>
-<li>######Rh-1-2 标签属性命名：</li>
+<h5 id="rh-1-html编写规范："><a href="#rh-1-html编写规范：" class="headerlink" title="(rh-1) html编写规范："></a>(rh-1) html编写规范：</h5><ul>
+<li><h6 id="Rh-1-1-class，id命名格式：-参见-Rc-1-1-命名格式。"><a href="#Rh-1-1-class，id命名格式：-参见-Rc-1-1-命名格式。" class="headerlink" title="Rh-1-1 class，id命名格式： 参见 Rc-1-1 命名格式。"></a>Rh-1-1 class，id命名格式： 参见 Rc-1-1 命名格式。</h6></li>
+<li><h6 id="Rh-1-2-标签属性命名："><a href="#Rh-1-2-标签属性命名：" class="headerlink" title="Rh-1-2 标签属性命名："></a>Rh-1-2 标签属性命名：</h6></li>
 </ul>
 <pre><code>采用小写英文字符 + &apos;_&apos; +英文字符的方式，也可以是单小写英文字符，规则参见 Rc-1-2 见名知意 。</code></pre><ul>
-<li>######Rh-1-3 内联样式：</li>
+<li><h6 id="Rh-1-3-内联样式："><a href="#Rh-1-3-内联样式：" class="headerlink" title="Rh-1-3 内联样式："></a>Rh-1-3 内联样式：</h6></li>
 </ul>
 <pre><code>严禁使用内联样式 。</code></pre><ul>
-<li>######Rh-1-4 style标签的使用</li>
+<li><h6 id="Rh-1-4-style标签的使用"><a href="#Rh-1-4-style标签的使用" class="headerlink" title="Rh-1-4 style标签的使用"></a>Rh-1-4 style标签的使用</h6></li>
 </ul>
 <pre><code>严禁使用style标签在 html项目内直接修改,特殊情况出现需要向TL报备并使用NOTE关键字进行注释并说明原因和注意事项。注释规则参见 Rj-1-2-2 行内注释</code></pre><ul>
-<li>######Rh-1-5 important关键字</li>
+<li><h6 id="Rh-1-5-important关键字"><a href="#Rh-1-5-important关键字" class="headerlink" title="Rh-1-5 important关键字"></a>Rh-1-5 important关键字</h6></li>
 </ul>
 <pre><code>原则上禁止 !important 关键字的出现，特殊情况出现需要向TL报备并使用NOTE关键字进行注释并说明原因和注意事项。注释规则参见 Rj-1-2-2 行内注释</code></pre><ul>
-<li>######Rh-1-6 script标签的使用</li>
+<li><h6 id="Rh-1-6-script标签的使用"><a href="#Rh-1-6-script标签的使用" class="headerlink" title="Rh-1-6 script标签的使用"></a>Rh-1-6 script标签的使用</h6></li>
 </ul>
-<pre><code>原则上禁止使用script标签直接在HTML文本中写控制脚本，特殊情况出现需要向TL报备并使用NOTE关键字进行注释并说明原因和注意事项。注释规则参见 Rj-1-2-2 行内注释</code></pre><p>#####(rp-1) 静态文件规范：</p>
-<ul>
-<li>######Rp-1-1 项目命名:</li>
+<pre><code>原则上禁止使用script标签直接在HTML文本中写控制脚本，特殊情况出现需要向TL报备并使用NOTE关键字进行注释并说明原因和注意事项。注释规则参见 Rj-1-2-2 行内注释</code></pre><h5 id="rp-1-静态文件规范："><a href="#rp-1-静态文件规范：" class="headerlink" title="(rp-1) 静态文件规范："></a>(rp-1) 静态文件规范：</h5><ul>
+<li><h6 id="Rp-1-1-项目命名"><a href="#Rp-1-1-项目命名" class="headerlink" title="Rp-1-1 项目命名:"></a>Rp-1-1 项目命名:</h6></li>
 </ul>
 <pre><code>全部采用小写，可以用下划线分割，如：my_project</code></pre><ul>
-<li>######Rp-1-2 目录命名包括css/js/html/json:</li>
+<li><h6 id="Rp-1-2-目录命名包括css-js-html-json"><a href="#Rp-1-2-目录命名包括css-js-html-json" class="headerlink" title="Rp-1-2 目录命名包括css/js/html/json:"></a>Rp-1-2 目录命名包括css/js/html/json:</h6></li>
 </ul>
 <pre><code>采用小写，可用下划线,
 复数目录，采用复数命名：scripts、styles</code></pre><ul>
-<li>######Rp-1-3 图片命名：</li>
+<li><h6 id="Rp-1-3-图片命名："><a href="#Rp-1-3-图片命名：" class="headerlink" title="Rp-1-3 图片命名："></a>Rp-1-3 图片命名：</h6></li>
 </ul>
 <pre><code>1、非公共资源图片命名以 项目名称（或者简写）作为开头+中划线+图片内容命名+双中划线+描述。 
 如 publish_job-loading--normal.png
 2、公共资源图片命名 public开头+中划线+图片内容命名+双中划线+描述。
 如public-loading--normal.png</code></pre><ul>
-<li>######Rp-1-4 代码仓库规范：</li>
+<li><h6 id="Rp-1-4-代码仓库规范："><a href="#Rp-1-4-代码仓库规范：" class="headerlink" title="Rp-1-4 代码仓库规范："></a>Rp-1-4 代码仓库规范：</h6></li>
 </ul>
 <pre><code>1、页面脚本仓库 -------------------------- js目录
 2、中间件仓库 -----------------------------Scripts目录
@@ -295,7 +304,7 @@ js:
 6、公共的图片库-----------------------------public目录
 7、公共样式目录-----------------------------Css/public目录
 7、公共html模板目录-------------------------Views/Shared目录</code></pre><ul>
-<li>######Rp-1-5 静态文件创建规则：</li>
+<li><h6 id="Rp-1-5-静态文件创建规则："><a href="#Rp-1-5-静态文件创建规则：" class="headerlink" title="Rp-1-5 静态文件创建规则："></a>Rp-1-5 静态文件创建规则：</h6></li>
 </ul>
 <pre><code>业务资源：在仓库下创建静态资源时，首先先创建一个与项目名称相同的文件夹，然后在该文件夹内去创建相应的脚本文件         或图片文件。
 公共的资源：
@@ -309,7 +318,7 @@ js:
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-01-13T08:37:50.800Z" itemprop="dateUpdated">2020-01-13 16:37:50</time>
+    Last updated: <time datetime="2020-01-13T09:45:35.688Z" itemprop="dateUpdated">2020-01-13 17:45:35</time>
 </span><br>
 
 
